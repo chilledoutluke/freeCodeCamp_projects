@@ -2,12 +2,52 @@
     --primary-grey: #1e2328;
     --secondary-grey:#2a2e34; 
     --grey-3: #3b3f46;
-    --yellow-1: #3b3f46;
+    --yellow-1: #fca311;
     --yellow-2: #f5b301;
     --yellow-3: #fed053;
 }
 
 body {
-
     font-family: 'Open Sans', sans-serif;
+    background:linear-gradient(var(--primary-grey), var(--secondary-grey), var(--yellow-1), var(--yellow-2));
+
 }
+
+#title {
+    font-weight: 400px;
+    font-size: 100px;
+    text-align: center;
+    color: #f5b301;
+
+}
+
+.description {
+    font-style: italic;
+    font-weight: 800;
+    margin-left: 40px;
+
+}
+
+#image {
+    border-radius: 2px;
+    border-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 20px; 
+}
+
+
+#emblem {
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a:link {
+    color: var(--primary-grey);
+}
+
