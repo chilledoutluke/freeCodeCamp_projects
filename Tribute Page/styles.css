@@ -1,0 +1,13 @@
+:root {
+    --primary-grey: #1e2328;
+    --secondary-grey:#2a2e34; 
+    --grey-3: #3b3f46;
+    --yellow-1: #3b3f46;
+    --yellow-2: #f5b301;
+    --yellow-3: #fed053;
+}
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+}
