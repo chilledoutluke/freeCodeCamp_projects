@@ -1,4 +1,61 @@
-label {
-    display: block;
+:root {
+    --primary-color: #222E50;
+    --secondary-color:#FCCB06;
+    --white-color: #EDF7F6;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin: 0;
+}
+
+h1, h3 {
+    color: var(--secondary-color);
+    font-family: 'Victor Mono', monospace;
+    
+}
+
+p {
+    margin-left: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.personal-details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
     margin: 5px;
+    padding: 2px;
+
+}
+
+label,input {
+    margin: 2px;
+}
+
+textarea {
+    margin-top: 10px;
+    padding: 50px;
+}
+
+input[type='submit']{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--secondary-color);
+    border-style: none;
+    color: var(--primary-color);
 }

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
 </head>
@@ -13,12 +16,23 @@
     <!-- Form -->
 
     <form action="" id="survery-form">
-        <fieldset>
+        <fieldset class="details">
+
+            <div class='personal-details'>
             <label id="name-label" for="name">Name:<input id="name" type="text" placeholder="Enter your name here" required></label>
+            </div>
+
+            <div class='personal-details'>
             <label id="email-label" for="email">Email:<input type="email" name="" id="email" placeholder="Email" required></label>
-            <label id="number-label" for="age">Age: <input type="number" min="10" max="120" placeholder="Age"></label>
+            </div>
+            <div class='personal-details'>   
+        <label id="number-label" for="age">Age:<input type="number" min="10" max="120" placeholder="Age"></label>
+            </div>
+
         </fieldset>
-        <fieldset>
+
+<!-- FIELDSET 2 -->
+        <fieldset class='details 2'>
             <label for="cars"><h3> What is your favourite popular car brand in South Africa?</h3></label>
             <select name="cars" id="dropdown">
                 <option value="Toyota">Toyota</option>
@@ -50,21 +64,33 @@
                 <option value="Mitsubishi">Mitsubishi</option>
             </select>
 
-            <label for="car-model"><h3>Car Models</h3></label>
+    <label for="car-model"><h3>Which car models do you prefer?</h3></label>
             <br>
-            <label for="">Roadster <input type="radio" name="car-type" id=""></label>
-            <label for="">Sports car <input type="radio" name="car-type" id=""></label>
-            <label for="">Crossover <input type="radio" name="car-type" id=""></label>
-            <label for="">Coupe <input type="radio" name="car-type" id=""></label>
-            <label for="">Hatchback <input type="radio" name="car-type" id=""></label>
-            <label for="">Pickup <input type="radio" name="car-type" id=""></label>
-            <label for="">Van <input type="radio" name="car-type" id=""></label>
-            <label for="">Sedan <input type="radio" name="car-type" id=""></label>
+        <label for="">Roadster <input type="radio" name="car-type" id=""></label>
+        <label for="">Sports car <input type="radio" name="car-type" id=""></label>
+        <label for="">Crossover <input type="radio" name="car-type" id=""></label>
+        <label for="">Coupe <input type="radio" name="car-type" id=""></label>
+        <label for="">Hatchback <input type="radio" name="car-type" id=""></label>
+        <label for="">Pickup <input type="radio" name="car-type" id=""></label>
+        <label for="">Van <input type="radio" name="car-type" id=""></label>
+        <label for="">Sedan <input type="radio" name="car-type" id=""></label>
         
+    </fieldset>
+
+<!-- FIELDSET 3 -->
+        <fieldset class='details 3'>
+            <h3>What is your favourite color on a car?</h3>
+            <label for=''>Black: <input type='checkbox' name='car-color' value='black'></label>
+            <label for=''>White: <input type='checkbox' name='car-color' value='white'></label>
+            <label for=''>Blue: <input type='checkbox' name='car-color' value='blue'></label>
+            <label for=''>Red: <input type='checkbox' name='car-color' value='red'></label>
+            <label for=''>Yellow: <input type='checkbox' name='car-color' value='yellow'></label>
+            <h3>Any additional comments you would like to add below?</h3>
+            <textarea placeholder='Additional comments...'>
+            </textarea>
+
         </fieldset>
-        <fieldset>
-            
-        </fieldset>
+        <input type='submit' target='_blank'>
     </form>
 </body>
 </html>
